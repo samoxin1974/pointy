@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\pointy.ico</ApplicationIcon>
+    <AssemblyName>Pointy</AssemblyName>
+    <RootNamespace>Pointy</RootNamespace>
+    <Product>Pointy</Product>
+    <AssemblyTitle>Pointy</AssemblyTitle>
+    <Company>Pointy</Company>
+    <Version>1.0.0</Version>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" SubType="Designer" Generator="MSBuild:Compile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!-- installer/ holds a separate project (the setup bootstrapper). Its generated files
+       live in a nested obj/ folder that the SDK's default excludes do not cover, so the
+       app project has to keep the whole subtree out of its globs. -->
+  <ItemGroup>
+    <Compile Remove="installer\**" />
+    <EmbeddedResource Remove="installer\**" />
+    <Page Remove="installer\**" />
+    <ApplicationDefinition Remove="installer\**" />
+    <None Remove="installer\**" />
+  </ItemGroup>
+
+</Project>
