@@ -16,7 +16,7 @@ namespace PointySetup
     {
         private const string AppName = "Pointy";
         private const string AppExeName = "Pointy.exe";
-        private const string AppVersion = "1.0.1";
+        private const string AppVersion = "1.0.2";
         private const string UninstallRoot = @"Software\Microsoft\Windows\CurrentVersion\Uninstall";
         private const string RunKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
 

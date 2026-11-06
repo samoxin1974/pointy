@@ -12,7 +12,7 @@
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     <PublishTrimmed>true</PublishTrimmed>
     <InvariantGlobalization>true</InvariantGlobalization>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <ApplicationIcon>..\..\Assets\pointy.ico</ApplicationIcon>
     <Product>Pointy</Product>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>

@@ -1,6 +1,6 @@
 ; Pointy per-user installer. No administrator rights required.
 #define AppName "Pointy"
-#define AppVersion "1.0.1"
+#define AppVersion "1.0.2"
 #define AppExe "Pointy.exe"
 
 [Setup]

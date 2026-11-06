@@ -15,7 +15,7 @@
     <Product>Pointy</Product>
     <AssemblyTitle>Pointy</AssemblyTitle>
     <Company>Pointy</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
