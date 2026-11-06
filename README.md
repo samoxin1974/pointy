@@ -11,8 +11,10 @@ Built with C# and WPF on .NET 8. No third-party packages.
 
 ## Install on Windows
 
-**The single installer.** `dist/PointySetup-1.0.0.exe` is one 132 MB file you
-can send to anyone on 64-bit Windows 10 or 11. Double-click it and confirm: it
+**The single installer.** Download `PointySetup-1.0.0.exe` from
+[Releases](https://github.com/samoxin1974/pointy/releases/latest) - one 138 MB
+file you can send to anyone on 64-bit Windows 10 or 11. (Building it yourself
+puts the same file at `dist/PointySetup-1.0.0.exe`.) Double-click it and confirm: it
 copies Pointy to `%LOCALAPPDATA%\Programs\Pointy`, adds a Start Menu shortcut
 and a desktop shortcut, lists Pointy under Settings > Apps so it can be
 uninstalled the normal way, and starts the app. No administrator rights are
@@ -25,7 +27,7 @@ silent, no-dialog install.
 the app, both shortcuts and the registry entry. Your settings stay in
 `%APPDATA%\Pointy` - delete that folder to start clean.
 
-**Portable.** `dist/Pointy` holds `Pointy.exe` and an `Assets` folder. Keep them
+**Portable.** A published `dist/Pointy` folder holds `Pointy.exe` and an `Assets` folder. Keep them
 together and run the exe straight out of the folder; nothing is installed.
 
 The build is unsigned, so Windows SmartScreen warns about an unknown publisher
